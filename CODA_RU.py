@@ -107,6 +107,7 @@ def Clear_CMD():
     Main_Menu()
 
 def Main_Menu():
+    print("CODA (Command-Oriented Digital Assistant) к вашим услугам")
     print("        ГЛАВНОЕ МЕНЮ        ")
     print("1. Открыть блокнот")
     print("2. Открыть калькулятор")
