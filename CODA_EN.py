@@ -3,6 +3,7 @@ import time
 import webbrowser
 import random
 from datetime import datetime
+print("CODA (Command-Oriented Digital Assistant) at your service")
 
 def Notepad():
     os.system("notepad")
@@ -53,9 +54,9 @@ def Guess_Number():
         Main_Menu
 
 def Rock_Papper_Scissors():
-    items = ["rock", "scissors", "papper"]
+    items = ["rock", "scissors", "paper"]
     chosen_item = random.choice(items)
-    print("Choose: rock, scissors или papper")
+    print("Choose: rock, scissors или paper")
     user_item = str(input(">>> "))
     if chosen_item == user_item:
         print("Tie!")
@@ -66,28 +67,28 @@ def Rock_Papper_Scissors():
         print("You won!")
         Main_Menu()
         
-    elif chosen_item == "rock" and user_item == "papper":
+    elif chosen_item == "rock" and user_item == "paper":
         print("I chose " + chosen_item)
         print("You lost...")
         Main_Menu()
 
-    elif chosen_item == "scissors" and user_item == "камень":
+    elif chosen_item == "scissors" and user_item == "rock":
         print("I chose " + chosen_item)
         print("You won!")
         Main_Menu()
 
-    elif chosen_item == "scissors" and user_item == "papper":
+    elif chosen_item == "scissors" and user_item == "paper":
         print("I chose " + chosen_item)
         print("You lost...")
         Main_Menu()
 
     
-    elif chosen_item == "papper" and user_item == "scissors":
+    elif chosen_item == "paper" and user_item == "scissors":
         print("I chose " + chosen_item)
         print("You won!")
         Main_Menu()
         
-    elif chosen_item == "papper" and user_item == "rock":
+    elif chosen_item == "paper" and user_item == "rock":
         print("I chose " + chosen_item)
         print("You lost...")
         Main_Menu()
@@ -107,7 +108,7 @@ def Clear_CMD():
     Main_Menu()
 
 def Main_Menu():
-    print("CODA (Command-Oriented Digital Assistant) at your service")
+    print(" ")
     print("        MAIN MENU        ")
     print("1. Open notepad")
     print("2. Open calculator")
